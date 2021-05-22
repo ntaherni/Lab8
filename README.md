@@ -25,5 +25,5 @@ The tests will run without a UI aspect in place, in this case the Chromium brows
   beforeEach(async () => {
     await page.goto('http://127.0.0.1:5500');
     await page.waitForTimeout(500);
-    await page.click('settings.svg');
+    page.click('[src="./styles/settings.svg"]');
   });
