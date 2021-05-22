@@ -22,7 +22,7 @@ The tests will run without a UI aspect in place, in this case the Chromium brows
 
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
 
-  beforeEach(async () => {
+  beforeAll(async () => {
     await page.goto('http://127.0.0.1:5500');
     await page.waitForTimeout(500);
     page.click('[src="./styles/settings.svg"]');
